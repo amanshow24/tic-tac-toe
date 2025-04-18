@@ -1,0 +1,109 @@
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .container {
+        height: auto;
+        padding: 10px;
+    }
+
+    .game {
+        height: 50vmin;
+        width: 50vmin;
+    }
+
+    .box {
+        height: 12vmin;
+        width: 12vmin;
+        font-size: 5vmin;
+    }
+
+    #reset,
+    #newbutton {
+        padding: 0.8rem 1rem;
+        font-size: 1rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1rem;
+        position: static; /* Makes sure footer stays in place */
+        margin-top: 20px;
+    }
+
+    footer p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Tablets and Larger Phones */
+@media (max-width: 1024px) {
+    .container {
+        height: 80vh;
+    }
+
+    .game {
+        height: 55vmin;
+        width: 55vmin;
+    }
+
+    .box {
+        height: 15vmin;
+        width: 15vmin;
+        font-size: 7vmin;
+    }
+
+    #reset,
+    #newbutton {
+        padding: 0.8rem 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    #msg {
+        font-size: 1.4rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1.2rem;
+    }
+
+    footer p {
+        font-size: 1rem;
+    }
+}
+
+/* Larger Devices (Desktops and Laptops) */
+@media (min-width: 1025px) {
+    .container {
+        height: 70vh;
+    }
+
+    .game {
+        height: 60vmin;
+        width: 60vmin;
+    }
+
+    .box {
+        height: 18vmin;
+        width: 18vmin;
+        font-size: 6vmin;
+    }
+
+    #reset,
+    #newbutton {
+        padding: 0.8rem 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    #msg {
+        font-size: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 1.2rem;
+    }
+}
