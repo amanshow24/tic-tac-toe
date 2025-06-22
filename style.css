@@ -5,78 +5,109 @@
 }
 
 body {
-  background-color: #f4f4f9;
-  font-family: Arial, sans-serif;
-  text-align: center;
+  background: linear-gradient(to bottom right, #eef2f3, #ffffff);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin: 2rem 0 1rem;
+  color: #333;
+}
+
+.mode-selector {
+  margin-bottom: 1.5rem;
+}
+
+#mode-select {
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .container {
-  height: 70vh;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  height: auto;
+  margin-bottom: 1.5rem;
 }
 
 .game {
-  height: 60vmin;
-  width: 60vmin;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 1vmin;
+  display: grid;
+  grid-template-columns: repeat(3, 90px);
+  grid-template-rows: repeat(3, 90px);
+  gap: 10px;
 }
 
 .box {
-  height: 18vmin;
-  width: 18vmin;
-  border-radius: 10px;
-  border: 2px solid #333;
-  font-size: 6vmin;
-  color: #333;
+  font-size: 2rem;
+  font-weight: bold;
   background-color: #fff;
-  transition: background-color 0.3s ease;
+  border: 2px solid #333;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 }
 
 .box:disabled {
-  background-color: #e0e0e0;
-  color: #999;
+  background-color: #f0f0f0;
+  color: #aaa;
   cursor: not-allowed;
+}
+
+.controls {
+  margin-bottom: 1.5rem;
 }
 
 #reset,
 #newbutton {
   padding: 0.8rem 1.5rem;
   font-size: 1rem;
-  background-color: #4caf50;
-  color: #fff;
-  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
   border: none;
-  margin: 20px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin: 0 0.5rem;
 }
 
 #reset:hover,
 #newbutton:hover {
-  background-color: #45a049;
+  background-color: #0056b3;
 }
 
 #msg {
   font-size: 1.5rem;
-  color: #333;
+  font-weight: bold;
+  color: #222;
 }
 
 .msg-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.95);
+  z-index: 10;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
   gap: 2rem;
 }
 
@@ -85,16 +116,8 @@ body {
 }
 
 footer {
-  position: absolute;
-  bottom: 10px;
-  width: 100%;
-  text-align: center;
-  font-size: 1rem;
-  color: #333;
-}
-
-footer p {
-  margin: 0;
-  color: #555;
+  margin: 2rem 0;
+  font-size: 0.9rem;
+  color: #666;
   font-style: italic;
 }

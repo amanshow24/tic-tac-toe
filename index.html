@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="responsive.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="responsive.css" />
 </head>
 <body>
-    <div class="msg-container hide">
-        <p id="msg">WINNER</p>
-        <button id="newbutton">New Game</button>
-    </div>
-    
-    <h1>Tic Tac Toe</h1>
-    <div class="container">
-        <div class="game">
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            <button class="box"></button>
-            
-        </div>
-    </div>
-    <div>
-        <button id="reset">Reset Game</button>
-    </div>
-    
-    <footer>
-        <p>© Developed by Aman Show</p>
-    </footer>
+  <div class="msg-container hide">
+    <p id="msg">WINNER</p>
+    <button id="newbutton">New Game</button>
+  </div>
 
-    <script src="script.js"></script>
+  <header>
+    <h1>Tic Tac Toe</h1>
+    <div class="mode-selector">
+      <label for="mode-select">Mode:</label>
+      <select id="mode-select">
+        <option value="2p">2 Player</option>
+        <option value="easy">Vs Computer (Easy)</option>
+        <option value="hard">Vs Computer (Hard)</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="game">
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+      <button class="box"></button>
+    </div>
+  </main>
+
+  <div class="controls">
+    <button id="reset">Reset Game</button>
+  </div>
+
+  <footer>
+    <p>© Developed by Aman Show</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
